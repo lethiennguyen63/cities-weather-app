@@ -1,0 +1,26 @@
+body {
+  background: url("/modern-javascript-lesson-100/weather_app/image/weather-background2.jpg")
+    no-repeat center center/cover;
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+}
+.container {
+  max-width: 400px;
+}
+
+#resultC {
+  position: relative;
+  top: 0;
+}
+
+#after {
+  position: absolute;
+  right: 25px;
+  bottom: 80px;
+  /* top: 0;
+  right: 0; */
+  font-size: 1.5rem;
+}
+.left-move {
+  margin-left: -10px;
+}
