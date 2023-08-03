@@ -1,6 +1,6 @@
 body {
-  background: url("/modern-javascript-lesson-100/weather_app/image/weather-background2.jpg")
-    no-repeat center center/cover;
+  background: url("./image/weather-background2.jpg") no-repeat center
+    center/cover;
   letter-spacing: 0.2em;
   font-size: 0.8em;
 }

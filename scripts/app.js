@@ -8,7 +8,7 @@ let rainSong = document.querySelector(".rainsong");
 let snowSong = document.querySelector(".snowSong");
 let cloudsSong = document.querySelector(".cloudsSong");
 
-cityForm.addEventListener("submit", async function(e) {
+cityForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   try {
     const cityValue = enterLocation.value.trim();
@@ -28,39 +28,21 @@ cityForm.addEventListener("submit", async function(e) {
     degreeF.innerHTML = `${resultF}`;
     const imageBackground = weather.WeatherIcon;
     if (imageBackground <= 5) {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/clear.jpg"
-      );
+      image.setAttribute("src", "./image/clear.jpg");
     } else if (
       imageBackground > 5 ||
       imageBackground <= 14 ||
       imageBackground > 33
     ) {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/clouds.jpg"
-      );
+      image.setAttribute("src", "./image/clouds.jpg");
     } else if (imageBackground > 14 || imageBackground <= 17) {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/storm.jpg"
-      );
+      image.setAttribute("src", "./image/storm.jpg");
     } else if (imageBackground >= 18 || imageBackground <= 19) {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/rain.jpg"
-      );
+      image.setAttribute("src", "./image/rain.jpg");
     } else if (imageBackground > 21 || imageBackground <= 29) {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/snow.jpg"
-      );
+      image.setAttribute("src", "./image/snow.jpg");
     } else {
-      image.setAttribute(
-        "src",
-        "/modern-javascript-lesson-100/weather_app/image/weather-background3.jpg"
-      );
+      image.setAttribute("src", "./image/weather-background3.jpg");
     }
 
     // const weatherImage = await function()
